@@ -17,8 +17,6 @@ Este es un proyecto de un **conversor de monedas** desarrollado en **Java 17**. 
 
 ## 🗂️ **Estructura del Proyecto**
 
-El proyecto sigue una estructura modular para facilitar la mantenibilidad y escalabilidad:
-
 ### 📦 **Paquetes**
 
 - **`com.alura.conversormonedas.principal`**
@@ -41,3 +39,30 @@ El proyecto sigue una estructura modular para facilitar la mantenibilidad y esca
 
    ```bash
    git clone https://github.com/uptzav/challenge-conversor-de-monedas.git
+   ```
+
+2. **Compila el proyecto:**
+
+   ```bash
+   javac -d bin $(find . -name "*.java")
+   ```
+
+3. **Ejecuta el programa:**
+
+   ```bash
+   java -cp bin com.alura.conversormonedas.principal.Principal
+   ```
+
+4. Sigue las instrucciones en pantalla para seleccionar la conversión deseada y proporciona los datos requeridos.
+
+## 🌐 **API Utilizada**
+
+Este proyecto utiliza la API [ExchangeRate-API](https://www.exchangerate-api.com/) para obtener tasas de cambio en tiempo real.
+
+### 📝 **Nota:**
+- La clave de API no está incluida directamente en el código (`ConsultaMonedas.java`). Si deseas usar tu propia clave, reemplázala en la variable `API_KEY`.
+
+
+## 👤 **Autor**
+
+Desarrollado por [Luis Zavala](https://github.com/uptzav).
